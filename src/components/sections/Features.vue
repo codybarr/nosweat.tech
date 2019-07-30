@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="flex items-center justify-center flex-col md:flex-row md:items-stretch">
-				<div class="w-full max-w-lg md:w-1/3 px-4">
+				<div class="w-full max-w-lg md:w-1/3 px-4 mb-10 md:m-0">
 					<div
 						class="card flex flex-col h-full bg-secondary items-center text-center shadow-xl rounded-lg px-4 py-5"
 					>
@@ -26,7 +26,7 @@
 					</div>
 				</div>
 
-				<div class="w-full max-w-lg md:w-1/3 px-4">
+				<div class="w-full max-w-lg md:w-1/3 px-4 mb-10 md:m-0">
 					<div
 						class="card flex flex-col h-full bg-secondary items-center text-center shadow-xl rounded-lg px-4 py-5"
 					>
@@ -63,7 +63,7 @@
 	</div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .card {
 	transition: transform 0.3s;
 }
