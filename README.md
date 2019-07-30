@@ -2,6 +2,8 @@
 
 Portfolio website of Cody Barr 🤙🏻 https://nosweat.tech
 
+![screenshot](./static/screenshot.png)
+
 ## Features
 
 - Based on Andre Madarang's starter here: https://github.com/drehimself/gridsome-portfolio-starter
