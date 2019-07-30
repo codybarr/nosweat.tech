@@ -1,6 +1,6 @@
 # No Sweat Tech
 
-Portfolio website of Cody Barr 🤙🏻 https://nosweat.tech
+Portfolio website of Cody Barr 🤙🏻 https://nosweat.tech. Built with [Gridsome](https://gridsome.org) and [Tailwind](https://tailwindcss.com).
 
 ![screenshot](./static/screenshot.png)
 
@@ -8,7 +8,7 @@ Portfolio website of Cody Barr 🤙🏻 https://nosweat.tech
 
 - Based on Andre Madarang's starter here: https://github.com/drehimself/gridsome-portfolio-starter
 - Clean and minimal design
-- [Tailwind CSS v1.0](https://tailwindcss.com) (with PurgeCSS)
+- [Tailwind](https://tailwindcss.com) (with PurgeCSS)
 - Scroll to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
 - Theme Switcher with Dark Mode
 - 404 Page
