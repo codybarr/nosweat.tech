@@ -21,22 +21,20 @@
 					</g-link>
 				</div>
 				<div class="hidden md:block thumbnail w-1/2 image-wrapper">
-					<g-link :to="node.image.src" target="_blank">
+					<g-link :to="node.image.src" target="_blank" :alt="node.name + ' screenshot'">
 						<figure class="image is-2by3">
-							<g-image :src="node.image" class="object-cover object-top" style="max-height: 300px;"></g-image>
+							<g-image :src="node.image" class="object-cover object-top" style="max-height: 300px;" :alt="node.name + ' thumbnail'"></g-image>
 						</figure>
 					</g-link>
 				</div>
 				<div class="copy w-full md:w-1/2 pr-4">
 					<h3 class="text-2xl font-bold mb-4">{{ node.name }}</h3>
-					<div class="text-base mb-4" v-html="node.content"></div>
+					<div class="content text-base" v-html="node.content"></div>
 					<a :href="node.url" target="_blank" class="btn mb-4">Visit Site</a>
-					<p v-if="node.tech && node.tech.length" class="text-base pt-4">
-						Tech used:
-						<span v-for="tech of node.tech" :key="tech" class="tech">
-							{{ tech }}
-							<span class="comma">,&nbsp;</span>
-						</span>
+					<p v-if="node.tech && node.tech.length" class="text-sm font-bold">
+						<!-- prettier-ignore-start -->
+						Tech used: <span v-for="tech of node.tech" :key="tech" class="tech">{{ tech }}<span class="comma">,&nbsp;</span></span>
+						<!-- prettier-ignore-end -->
 					</p>
 				</div>
 			</article>
@@ -63,6 +61,10 @@ query Projects {
 </static-query>
 
 <style lang="postcss" scoped>
+p {
+	@apply pb-4;
+}
+
 article.project {
 	@apply flex flex-col pb-10;
 	&:not(:last-child) {
