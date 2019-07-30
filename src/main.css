@@ -141,3 +141,7 @@ nav .active {
 h2.heading {
 	@apply text-3xl font-bold mb-12 text-center;
 }
+
+p {
+	@apply pb-4;
+}
