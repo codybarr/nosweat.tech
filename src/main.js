@@ -3,7 +3,6 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
-import VueFuse from 'vue-fuse'
 import Vuex from 'vuex'
 
 export default function(Vue, { router, head, isClient, appOptions }) {
@@ -14,8 +13,6 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 		duration: 500,
 		easing: 'ease'
 	})
-
-	Vue.use(VueFuse)
 
 	Vue.use(Vuex)
 

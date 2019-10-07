@@ -7,7 +7,6 @@
 
 const fs = require('fs')
 const path = require('path')
-const pick = require('lodash.pick')
 
 module.exports = function(api, options) {
 	api.loadSource(store => {

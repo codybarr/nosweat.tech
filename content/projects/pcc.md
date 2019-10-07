@@ -1,9 +1,11 @@
 ---
 name: Presbyterian Church of Coventry
-url: https://coventrypca.church
+url: https://pcc.netlify.com
 image: ./images/pcc.png
 date: 2019-08-01
 tech: ['Vue.js', 'Gridsome', 'Bulma', 'Tailwind', 'NetlifyCMS']
 ---
 
-The Presbyterian Church of Coventry is my home church. Recently we were looking to do a redesign. The website is fully responsive and pulls in tweets from @CoventryPCA. It has a customizable front page slideshow and even a system that can be usedbroadcast alerts at the top of the site for things like snow cancellations, etc.
+The Presbyterian Church of Coventry is my home church. I redesigned their website when I first became a member in 2013, but when 2019 rolled around it was starting to look a little dated.
+
+We redesigned it from the ground up using Gridsome, Bulma (with some Tailwind), and NetlifyCMS. The site is super fast now, includes progressive images out-of-the-box, and features a sleek, modern design.
