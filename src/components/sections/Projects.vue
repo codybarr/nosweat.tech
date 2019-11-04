@@ -23,7 +23,12 @@
 				<div class="hidden md:block thumbnail w-1/2 image-wrapper">
 					<g-link :to="node.image.src" target="_blank" :alt="node.name + ' screenshot'">
 						<figure class="image is-2by3">
-							<g-image :src="node.image" class="object-cover object-top" style="max-height: 300px;" :alt="node.name + ' thumbnail'"></g-image>
+							<g-image
+								:src="node.image"
+								class="object-cover object-top"
+								style="max-height: 300px;"
+								:alt="node.name + ' thumbnail'"
+							></g-image>
 						</figure>
 					</g-link>
 				</div>
@@ -33,7 +38,11 @@
 					<a :href="node.url" target="_blank" class="btn mb-4">Visit Site</a>
 					<p v-if="node.tech && node.tech.length" class="text-sm font-bold">
 						<!-- prettier-ignore-start -->
-						Tech used: <span v-for="tech of node.tech" :key="tech" class="tech">{{ tech }}<span class="comma">,&nbsp;</span></span>
+						Tech used:
+						<span v-for="tech of node.tech" :key="tech" class="tech">
+							{{ tech }}
+							<span class="comma">,&nbsp;</span>
+						</span>
 						<!-- prettier-ignore-end -->
 					</p>
 				</div>
@@ -50,7 +59,7 @@ query Projects {
       node {
         id
         name
-        image
+        image(width: 600)
         content
 		url
 		tech

@@ -1,11 +1,11 @@
 ---
 name: Presbyterian Church of Coventry
-url: https://pcc.netlify.com
+url: https://coventrypca.church
 image: ./images/pcc.png
-date: 2019-08-01
+date: 2019-11-03
 tech: ['Vue.js', 'Gridsome', 'Bulma', 'Tailwind', 'NetlifyCMS']
 ---
 
-The Presbyterian Church of Coventry is my home church. I redesigned their website when I first became a member in 2013, but when 2019 rolled around it was starting to look a little dated.
+PCC is my home church and we redesigned their site from the ground up using Gridsome and Tailwind (with some Bulma), and NetlifyCMS. The site is extremely performant, uses progressive images, features a sleek & modern design, and implements an infinite loading technique for various content.
 
-We redesigned it from the ground up using Gridsome, Bulma (with some Tailwind), and NetlifyCMS. The site is super fast now, includes progressive images out-of-the-box, and features a sleek, modern design.
+Bulletins are pulled in automatically from an S3 bucket during the build process and sermons include a number of relationships and can be filtered by series, author, and book.
