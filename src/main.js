@@ -39,11 +39,6 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 			'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS'
 	})
 
-	// head.meta.push({
-	// 	name: 'description',
-	// 	content: 'Gridsome Portfolio Starter'
-	// })
-
 	head.meta.push({
 		name: 'author',
 		content: 'Cody Barr'

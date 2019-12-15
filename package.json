@@ -4,6 +4,7 @@
 	"scripts": {
 		"build": "gridsome build",
 		"serve": "gridsome develop",
+		"develop": "gridsome develop",
 		"explore": "gridsome explore"
 	},
 	"dependencies": {
