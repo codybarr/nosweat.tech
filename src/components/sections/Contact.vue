@@ -21,6 +21,7 @@
 					action="/success/"
 					data-netlify="true"
 					data-netlify-honeypot="bot-field"
+					data-netlify-recaptcha="true"
 					class="mb-12"
 				>
 					<input type="hidden" name="form-name" value="contact" />
@@ -73,6 +74,8 @@
 							required
 						></textarea>
 					</div>
+
+					<div data-netlify-recaptcha="true"></div>
 
 					<div class="flex justify-end w-full">
 						<input
@@ -175,7 +178,7 @@
 export default {
 	data() {
 		return {
-			formData: {}
+			formData: {},
 		}
 	},
 	methods: {
@@ -193,16 +196,16 @@ export default {
 			fetch('/', {
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
+					'Content-Type': 'application/x-www-form-urlencoded',
 				},
 				body: this.encode({
 					'form-name': e.target.getAttribute('name'),
-					...this.formData
-				})
+					...this.formData,
+				}),
 			})
 				.then(() => this.$router.push('/success'))
 				.catch(error => alert(error))
-		}
-	}
+		},
+	},
 }
 </script>
