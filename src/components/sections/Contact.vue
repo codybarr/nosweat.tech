@@ -193,6 +193,7 @@ export default {
 				.join('&')
 		},
 		handleSubmit(e) {
+			console.log('e', e)
 			fetch('/', {
 				method: 'POST',
 				headers: {
@@ -200,6 +201,8 @@ export default {
 				},
 				body: this.encode({
 					'form-name': e.target.getAttribute('name'),
+					'g-recaptcha-response':
+						e.target['g-recaptcha-response'].value,
 					...this.formData,
 				}),
 			})
