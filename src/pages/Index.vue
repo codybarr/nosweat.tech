@@ -5,16 +5,10 @@
 		>
 			<div class="text-4xl font-bold w-full sm:w-3/5 text-center">
 				<div class="leading-tight">I Build</div>
-				<div class="text-blue-400 leading-tight">
-					Spectacular Websites
-				</div>
+				<div class="text-blue-400 leading-tight">Spectacular Websites</div>
 			</div>
 			<div class="mt-8 sm:mt-0 w-1/2 mx-auto">
-				<g-image
-					src="../../static/coding.svg"
-					alt="hero"
-					class="mx-auto sm:mx-0"
-				/>
+				<g-image src="../../static/coding.svg" alt="hero" class="mx-auto sm:mx-0" />
 			</div>
 		</div>
 		<!-- end hero -->
@@ -37,23 +31,16 @@
 		<Projects />
 
 		<div class="overflow-x-hidden border-gray-200">
-			<div
-				class="get-to-know-me container-inner mx-auto text-xl pb-16 relative"
-			>
+			<div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
 				<h2 class="heading" id="about">Get to know me</h2>
 
-				<div
-					class="absolute left-0"
-					style="top: 50px; transform: translateX(-100%)"
-				>
+				<div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
 					<svg width="170px" height="170px">
 						<use xlink:href="#dots-triangle" />
 					</svg>
 				</div>
 
-				<div
-					class="flex flex-col md:flex-row justify-between items-center mb-16"
-				>
+				<div class="flex flex-col md:flex-row justify-between items-center mb-16">
 					<div>
 						<g-image
 							src="../images/avatar.jpg"
@@ -62,21 +49,15 @@
 							class="w-32 h-32 rounded-full mb-8 lg:mb-0"
 						/>
 					</div>
-					<div
-						class="flex-1 text-lg sm:text-xl text-center md:text-left ml-6"
-					>
-						Software Engineer at Insite Technology. Aspiring
-						Front-end Dev. Currently playing around with Vue.js,
+					<div class="flex-1 text-lg sm:text-xl text-center md:text-left ml-6">
+						Software Engineer at
+						<a href="https://twitter.com/travelers" target="_blank" rel="noreferrer noopener">Travelers</a>. Currently playing around with Vue.js,
 						Gridsome, and TailwindCSS.
 					</div>
 				</div>
 			</div>
 		</div>
-		<svg
-			fill="currentColor"
-			viewBox="0 0 1695 57"
-			class="text-fill-primary"
-		>
+		<svg fill="currentColor" viewBox="0 0 1695 57" class="text-fill-primary">
 			<path
 				d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"
 			/>
@@ -96,7 +77,7 @@ export default {
 		Features,
 		Projects,
 		Testimonials,
-		Contact
-	}
+		Contact,
+	},
 }
 </script>
