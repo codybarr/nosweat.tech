@@ -1,6 +1,6 @@
 # No Sweat Tech
 
-Portfolio website of Cody Barr 🤙🏻 https://nosweat.tech. Built with [Gridsome](https://gridsome.org) and [Tailwind](https://tailwindcss.com).
+Built with [Gridsome](https://gridsome.org) and [Tailwind](https://tailwindcss.com).
 
 ![screenshot](./static/screenshot.png)
 
